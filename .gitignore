@@ -35,9 +35,7 @@ tensorboard/
 unison/models/mmaudio/data/ext_weights/*.pth
 unison/models/mmaudio/data/ext_weights/*.pt
 
-# Sample audio data (tracked via Git LFS or downloaded separately)
-data/train/audio/*.wav
-data/infer/**/*.wav
+# Large model weight files excluded; example audio data is tracked directly
 
 # OS
 .DS_Store
