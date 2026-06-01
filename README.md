@@ -203,9 +203,9 @@ See `scripts/infer.sh` for the full list and inline documentation.
 
 Edit these files before running:
 
-- `**scripts/example_infer_prompts/gen_prompts.txt**` — one prompt per line for T2A, TTS, mixed, and timed tasks
-- `**scripts/example_infer_prompts/edit_config.json**` — list of editing tasks, each with a `prompt` and `source_audio` path
-- `**scripts/example_infer_prompts/zeroshotts_config.json**` — list of zero-shot TTS tasks, each with `target_text` and `ref_audio` path
+- **`scripts/example_infer_prompts/gen_prompts.txt`** — one prompt per line for T2A, TTS, mixed, and timed tasks
+- **`scripts/example_infer_prompts/edit_config.json`** — list of editing tasks, each with a `prompt` and `source_audio` path
+- **`scripts/example_infer_prompts/zeroshotts_config.json`** — list of zero-shot TTS tasks, each with `target_text` and `ref_audio` path
 
 The `data/infer/` directory ships with the demo audio samples ready to use.
 
