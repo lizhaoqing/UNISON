@@ -2,11 +2,17 @@
 
 **UNISON** is a unified latent flow-matching framework for speech generation, sound generation, and audio-scene/speech-in-scene editing — all within a single model and a single set of weights.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2605.31530-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.31530)
-[![GitHub](https://img.shields.io/badge/GitHub-Code-0969DA?logo=github&logoColor=white)](https://github.com/lizhaoqing/UNISON)
-[![Demo](https://img.shields.io/badge/Demo-Project%20Page-F76F00?logo=googlechrome&logoColor=white)](https://lizhaoqing.github.io/UNISON-demo/)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-FFD21F?logo=huggingface&logoColor=black)](https://huggingface.co/jac22/UNISON)
-[![License](https://img.shields.io/badge/License-Apache_2.0_NC-4285F4?logoColor=white)](LICENSE)
+<p align="center">
+  <a href="https://arxiv.org/abs/2605.31530"><img src="https://img.shields.io/badge/arXiv-Paper-B31B1B.svg" alt="arXiv Paper"></a>
+  &nbsp;
+  <a href="https://github.com/lizhaoqing/UNISON"><img src="https://img.shields.io/badge/GitHub-Code-blue?logo=GitHub&style=flat-square" alt="GitHub Code"></a>
+  &nbsp;
+  <a href="https://lizhaoqing.github.io/UNISON-demo/"><img src="https://img.shields.io/badge/GitHub.io-Demo_Page-blue?logo=GitHub&style=flat-square" alt="Demo Page"></a>
+  &nbsp;
+  <a href="https://huggingface.co/jac22/UNISON"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-FFD21E" alt="Hugging Face Model"></a>
+  &nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0_NC-4285F4" alt="License"></a>
+</p>
 
 ![UNISON Overview](images/fig1.png)
 
