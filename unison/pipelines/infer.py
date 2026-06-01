@@ -931,9 +931,11 @@ def main():
 
             # Load ref audio first (truncate to ref_duration with silence-aware
             # snap + tail silence pad to suppress ref-tail leakage).
+            # ref_duration=0 means use the full reference without truncation
+            _max_ref_dur = None if args.ref_duration == 0 else args.ref_duration
             ref_wav = load_ref_audio(
                 ref_path, target_sr=vae_sample_rate,
-                max_ref_duration=args.ref_duration, device=device,
+                max_ref_duration=_max_ref_dur, device=device,
                 silence_search_s=args.ref_silence_search_s,
                 silence_threshold_db=args.ref_silence_threshold_db,
                 tail_pad_s=args.ref_tail_pad_s,

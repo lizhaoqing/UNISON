@@ -103,13 +103,17 @@ ZS_DURATION="${ZS_DURATION:-10.0}"
 # Length of reference audio used for speaker cloning, in seconds.
 # Only the first REF_DURATION seconds of the ref_audio file are used.
 # A silence-aware snap slightly adjusts the cut to avoid cutting mid-phoneme.
-# Longer refs give better speaker similarity but leave
-# less room for the generated target within ZS_DURATION.
+# Longer refs give better speaker similarity but leave less room for the
+# generated target within ZS_DURATION.
+# Set to 0 to use the full reference audio without any truncation.
 REF_DURATION="${REF_DURATION:-3.0}"
 
-# Whisper model size for auto-transcribing the reference audio.
+# Whisper model size for auto-transcribing the reference audio transcript.
 # Choices: tiny | base | small | medium | large
-# Only needed when ref_text is NOT provided in the zs_config JSON.
+# "ref_text" in the zs_config JSON is optional — if omitted, Whisper
+# automatically transcribes the (possibly truncated) reference clip.
+# If "ref_text" is provided, it is used as-is without re-running Whisper,
+# even if the clip was truncated; make sure it matches the truncated portion.
 WHISPER_MODEL="${WHISPER_MODEL:-base}"
 
 # ---------------------------------------------------------------------------

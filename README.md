@@ -139,8 +139,6 @@ checkpoints/
     unison_D24S0_O_20ch/model.safetensors   # 16 kHz
 ```
 
-`--model_ckpt` accepts a **directory** (auto-detects `ema_model.pt` → `model.safetensors` → `pytorch_model.bin` in that order) or a **direct file path** to any of the three formats. EMA wrappers are unwrapped automatically.
-
 ---
 
 ## Inference
@@ -194,7 +192,7 @@ All parameters can be passed as `--key value` arguments or set as environment va
 | `--guidance_scale`      | 4.5     | CFG scale                                      |
 | `--seed`                | 42      | Random seed                                    |
 | `--gen_duration`        | 10.0    | Output length in seconds for generation        |
-| `--ref_duration`        | 3.0     | Reference clip length for zero-shot TTS        |
+| `--ref_duration`        | 3.0     | Reference clip length in seconds for zero-shot TTS. Set to `0` to use the full reference without truncation. |
 
 
 See `scripts/infer.sh` for the full list and inline documentation.
@@ -205,7 +203,7 @@ Edit these files before running:
 
 - **`scripts/example_infer_prompts/gen_prompts.txt`** — one prompt per line for T2A, TTS, mixed, and timed tasks
 - **`scripts/example_infer_prompts/edit_config.json`** — list of editing tasks, each with a `prompt` and `source_audio` path
-- **`scripts/example_infer_prompts/zeroshotts_config.json`** — list of zero-shot TTS tasks, each with `target_text` and `ref_audio` path
+- **`scripts/example_infer_prompts/zeroshotts_config.json`** — list of zero-shot TTS tasks, each with `target_text` and `ref_audio` path; `ref_text` is optional — if omitted, Whisper auto-transcribes the (possibly truncated) reference clip; if provided, it is used as-is without re-running Whisper, even if the clip was truncated — make sure it matches the truncated portion
 
 The `data/infer/` directory ships with the demo audio samples ready to use.
 
