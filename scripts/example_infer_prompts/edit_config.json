@@ -1,0 +1,62 @@
+[
+    {
+        "note": "Audio Edit — Add (idle engine + thunder)",
+        "prompt": "[Edit] [Audio] Mix in the sound of Thunder.",
+        "source_audio": "data/infer/edit/edit_s1_src.wav"
+    },
+    {
+        "note": "Audio Edit — Add (paper crumpling + dog)",
+        "prompt": "[Edit] [Audio] Mix in the sound of Bow-wow and Whimper (dog).",
+        "source_audio": "data/infer/edit/edit_s4_src.wav"
+    },
+    {
+        "note": "Audio Edit — Remove (source has gunfire mixed in)",
+        "prompt": "[Edit] [Audio] Remove the sound of Gunshot, gunfire.",
+        "source_audio": "data/infer/edit/edit_s5_src.wav"
+    },
+    {
+        "note": "Audio Edit — Remove (source has bird sounds mixed in)",
+        "prompt": "[Edit] [Audio] Eliminate the sound of Bird and Domestic animals, pets.",
+        "source_audio": "data/infer/edit/edit_s6_src.wav"
+    },
+    {
+        "note": "Audio Edit — Replace (source has burst/pop sounds)",
+        "prompt": "[Edit] [Audio] Eliminate the sound of Burst, pop. [Edit] [Audio] Add Ambulance (siren).",
+        "source_audio": "data/infer/edit/edit_s7_src.wav"
+    },
+    {
+        "note": "Speech Edit — Rewrite content",
+        "prompt": "[Edit] [Speech] Alter the spoken content to \"I will not be alarmed though your sister does play so well.\"",
+        "source_audio": "data/infer/edit/speech_s1_src.wav"
+    },
+    {
+        "note": "Speech Edit — Insert speech",
+        "prompt": "[Edit] [Speech] Add a voice saying \"The facade is constructed from white Portland stone and red brick.\"",
+        "source_audio": "data/infer/edit/speech_s2_src.wav"
+    },
+    {
+        "note": "Speech Edit — Delete speech",
+        "prompt": "[Edit] [Speech] Remove the speech.",
+        "source_audio": "data/infer/edit/speech_s3_src.wav"
+    },
+    {
+        "note": "Denoising — English (SNR 11.3 dB)",
+        "prompt": "[Edit] [Speech] Denoise the record.",
+        "source_audio": "data/infer/edit/denoise_en_0002_noisy.wav"
+    },
+    {
+        "note": "Denoising — English (SNR 6.4 dB)",
+        "prompt": "[Edit] [Speech] Denoise the record.",
+        "source_audio": "data/infer/edit/denoise_en_0003_noisy.wav"
+    },
+    {
+        "note": "Denoising — Chinese (SNR 9.4 dB)",
+        "prompt": "[Edit] [Speech] Denoise the record.",
+        "source_audio": "data/infer/edit/denoise_zh_0000_noisy.wav"
+    },
+    {
+        "note": "Denoising — Chinese (SNR 10.9 dB)",
+        "prompt": "[Edit] [Speech] Denoise the record.",
+        "source_audio": "data/infer/edit/denoise_zh_0001_noisy.wav"
+    }
+]

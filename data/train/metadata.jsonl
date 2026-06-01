@@ -1,0 +1,5 @@
+{"audio_path": "data/train/audio/truck_driving.wav", "caption": "A truck is driving with wind noise in the background.", "task": "t2a", "duration": 10.0, "source": "WavCaps/AudioSet_SL"}
+{"audio_path": "data/train/audio/firecrackers_people_speaking.wav", "caption": "Firecrackers are exploding and people are speaking.", "task": "t2a", "duration": 10.0, "source": "WavCaps/AudioSet_SL"}
+{"audio_path": "data/train/audio/blender_mechanisms.wav", "caption": "Mechanisms and a blender or food processor can be heard.", "task": "t2a", "duration": 10.0, "source": "WavCaps/AudioSet_SL"}
+{"audio_path": "data/train/audio/train_overhead.wav", "caption": "A train passes overhead.", "task": "t2a", "duration": 8.5, "source": "WavCaps/FreeSound"}
+{"audio_path": "data/train/audio/heartbeat.wav", "caption": "A heartbeat is heard.", "task": "t2a", "duration": 10.0, "source": "WavCaps/FreeSound"}

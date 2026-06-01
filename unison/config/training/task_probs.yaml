@@ -1,0 +1,23 @@
+task_config:
+  # ================== Generation tasks (sum = 0.70) ==================
+  tts: 0.15
+  zeroshotts: 0.25
+  t2a_single: 0.10
+  t2a_mix: 0.08
+  speech_audio_mix: 0.08
+  t2a_timeline: 0.04
+
+  # ================== Editing tasks (sum = 0.30) ==================
+  edit_add: 0.04
+  edit_remove: 0.04
+  edit_speech_insert: 0.04
+  edit_remove_add: 0.03
+  edit_speech_content: 0.04
+  edit_arsp: 0.02
+  edit_srap: 0.02
+  speech_delete: 0.03
+  denoise: 0.04
+
+  # Total = 1.00 (0.70 gen + 0.30 edit).
+  # During generation-only warm-up, weights are re-normalised over the 6 generation
+  # tasks; zeroshotts accounts for roughly 0.25/0.7 ≈ 36% of that stage.

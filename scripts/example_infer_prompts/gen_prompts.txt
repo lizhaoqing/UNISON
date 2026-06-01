@@ -1,0 +1,72 @@
+# UNISON generation prompts — one prompt per non-blank, non-comment line.
+#
+# Prompt templates:
+#
+#   TTS:
+#     [Speech] A {gender} voice saying "{text}"   (text can be English or Chinese)
+#
+#   T2A (single event):
+#     [Audio] {caption}
+#
+#   Mixed Speech + Audio:
+#     [Speech] A {gender} voice saying "{text}" [Audio] {background}
+#
+#   Timeline / timed composition:
+#     [Audio] From {t1}s to {t2}s, {event}. From {t3}s to {t4}s, {event}. ...
+
+
+# ============================================================
+# TTS — English  (from demo page)
+# ============================================================
+[Speech] A female voice saying "It now has five chapters: Butterfield Trail, Magazine Mountain, Ozark, Razorback and Cornerstone."
+[Speech] A male voice saying "It now has five chapters: Butterfield Trail, Magazine Mountain, Ozark, Razorback and Cornerstone."
+[Speech] A female voice saying "Some large firms or specialized jobs require a master's degree."
+[Speech] A male voice saying "Some large firms or specialized jobs require a master's degree."
+[Speech] A female voice saying "He is a good player and deserves a chance at this level."
+[Speech] A male voice saying "He is a good player and deserves a chance at this level."
+
+# ============================================================
+# TTS — Chinese  (from demo page)
+# ============================================================
+[Speech] A female voice saying "你是不是想死呀你，你问什么呀你。"
+[Speech] A male voice saying "你是不是想死呀你，你问什么呀你。"
+[Speech] A female voice saying "大大的眼睛望着镜头闪闪发亮，肉肉的小胳膊小腿也惹人怜爱。"
+[Speech] A male voice saying "大大的眼睛望着镜头闪闪发亮，肉肉的小胳膊小腿也惹人怜爱。"
+[Speech] A female voice saying "尾号四六七幺的乘客刚夸了你，你是电你是光，你是出行的神话。"
+[Speech] A male voice saying "尾号四六七幺的乘客刚夸了你，你是电你是光，你是出行的神话。"
+
+# ============================================================
+# T2A — AudioCaps captions  (from demo page)
+# ============================================================
+[Audio] Clip-clops gallop as the wind blows and thunder cracks
+[Audio] A train running on railroad tracks as a train horn blows and steam hisses
+[Audio] A very low-pitched hum occurs, followed by an explosion
+[Audio] Wind blowing followed by people speaking then a loud burst of thunder
+[Audio] A man speaking over an intercom as a helicopter engine runs followed by several gunshots firing
+[Audio] Footsteps shuffling on snow alongside a camera muffling while wind blows into a microphone
+[Audio] Tribal drums playing as footsteps shuffle on wet dirt as frogs and crickets chirp in the background
+
+# ============================================================
+# Mixed Speech + Audio  (from demo page, T2AS section)
+# ============================================================
+# EN female
+[Speech] A female voice saying "She put on her slippers, scaled the stairs, and went to bed." [Audio] A bird is cooing and flapping its wings
+[Speech] A female voice saying "He chairs the executive committee of council and the community policing committee." [Audio] Bee buzzes while man speaks
+[Speech] A male voice saying "It then became involved with pharmaceuticals, food additives, and industrial and consumer chemicals." [Audio] A man speaks with a high frequency hum and some banging and clanking
+[Speech] A male speaker is saying: "Welcome to the jungle." [Audio] tropical birds chirping and insects buzzing
+[Speech] A female voice says: "The storm is getting worse." [Audio] loud thunder and heavy rain
+[Speech] A male voice reads: "Chapter one: the beginning." [Audio] soft ambient piano music
+[Speech] A male announcer says: "The train is approaching the platform." [Audio] a train whistle blowing and tracks rumbling
+# ZH
+[Speech] A male announcer says: "列车即将进站，请乘客注意安全。" [Audio] a train whistle and rumbling tracks
+[Speech] A male voice saying "目前，葛某及其朋友也被另案处理。" [Audio] Several very loud explosions occur
+[Speech] A female voice saying "二儿子同样是不会浪费时间的人。" [Audio] A piano playing as plastic bonks
+[Speech] A female voice saying "不光俺村群众不方便，谁从这过都不方便。" [Audio] Man speaks in a crowd, a distant horn blows, then a race car goes by
+
+# ============================================================
+# Timed Composition  (from demo page)
+# ============================================================
+[Audio] From 0.0s to 3.1s, Ambulance (siren). From 3.6s to 6.1s, Chainsaw. From 6.6s to 10.0s, Subway, metro, underground.
+[Audio] From 0.0s to 4.1s, Thunder. From 4.6s to 10.0s, Stream.
+[Audio] From 0.0s to 4.2s, Rub. From 4.7s to 10.0s, Clip-clop.
+[Audio] From 0.0s to 4.8s, Children playing. From 3.1s to 7.9s, Ambulance (siren). From 6.1s to 10.0s, Chainsaw.

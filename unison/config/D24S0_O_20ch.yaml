@@ -1,0 +1,27 @@
+in_channels: 20            # MMAudio 16 kHz VAE latent channels (C=20); model receives 2C+1=41 channels when concat_condition=True
+out_channels: 20
+patch_size: [1, 2, 2]
+hidden_size: 1024
+heads_num: 8
+mlp_act_type: gelu_tanh
+mlp_width_ratio: 4.0
+mm_double_blocks_depth: 24
+mm_single_blocks_depth: 0
+qkv_bias: true
+qk_norm: true
+qk_norm_type: rms
+attn_mode: flash
+attn_param: null
+rope_dim_list: [96, 16, 16]
+rope_theta: 10000
+omni_dim: 3584
+is_reshape_temporal_channels: false
+use_duration_embedding: false
+is_audio_type: true
+use_omni_embedding: true
+use_omni_last_embedding: false
+omni_last_layer_idx: -2          # -1 = last LLM layer, -2 = second-to-last
+guidance_embed: false
+temporal_rope_scaling_factor: 1.0
+repa_z_dim: null
+repa_layer_num: null

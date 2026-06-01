@@ -1,0 +1,22 @@
+[
+    {
+        "note": "EN zero-shot TTS — ref_audio is auto-truncated to ref_duration (default 3s); ref_text is auto-transcribed by Whisper.",
+        "target_text": "The King of Portugal was being shaved by his barber.",
+        "ref_audio": "data/infer/zeroshotts/zstts_s1_ref.wav"
+    },
+    {
+        "note": "EN zero-shot TTS",
+        "target_text": "The bark of the pine tree was shiny and dark.",
+        "ref_audio": "data/infer/zeroshotts/zstts_s2_ref.wav"
+    },
+    {
+        "note": "ZH zero-shot TTS",
+        "target_text": "是对全球时装产业，与时装学院伟大成就的曼妙回眸。",
+        "ref_audio": "data/infer/zeroshotts/zstts_s3_ref.wav"
+    },
+    {
+        "note": "ZH zero-shot TTS",
+        "target_text": "顺风时提高警惕，逆风时笃定前行。",
+        "ref_audio": "data/infer/zeroshotts/zstts_s4_ref.wav"
+    }
+]
