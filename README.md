@@ -131,7 +131,11 @@ export QWEN_OMNI_MODEL_PATH=/path/to/Qwen2.5-Omni-7B
 
 Download from HuggingFace: **[huggingface.co/jac22/UNISON](https://huggingface.co/jac22/UNISON)**
 
-Place the checkpoints under `checkpoints/`:
+```bash
+hf download jac22/UNISON --local-dir checkpoints
+```
+
+This produces:
 
 ```
 checkpoints/
